@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./images/star.icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+    />
+    <title>ToDoApp</title>
+  </head>
+  <body>
+    <section class="w-50 mx-auto my-4">
+      <div
+        class="status_todo bg-light bg-opacity-25 p-3 rounded shadow mb-4 border d-flex align-items-center justify-content-between"
+      >
+        <div class="flex-grow-1">
+          <h1 class="h5">Todo App</h1>
+          <span class="small">Keep it up!</span>
+          <div id="progressBar">
+            <div id="progress"></div>
+          </div>
+        </div>
+        <div class="status_number"><span></span> / <span></span></div>
+      </div>
+      <form class="d-flex gap-5 bg-white p-4 rounded shadow">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="task to be done..."
+        />
+        <button type="submit" class="add_task">Add</button>
+      </form>
+
+      <ul class="task_container bg-white mt-5 p-4 rounded shadow">
+        <!-- Tasks will be dynamically added here -->
+        <!-- <li class="d-flex align-items-center justify-content-between border-bottom pb-2 my-2">
+                <span class="task_name">read Book</span>
+                <div class="d-flex align-items-center gap-4">
+                    <span><i class="fa-regular fa-circle-check" style="color: #63E6BE;"></i></span>
+                    <span class="icon"><i class="fa-solid fa-trash-can"></i></span>
+                </div>
+            </li> -->
+      </ul>
+    </section>
+
+    <div class="loading dno">
+      <span class="loader"></span>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.0/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
